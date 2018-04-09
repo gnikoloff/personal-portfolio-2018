@@ -1,0 +1,73 @@
+html(class=`${device_type}`)
+    head
+        title Georgi Nikolov
+
+        meta(name="description" content="Georgi Nikolov Web Site")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0")
+        meta(property="og:title" content="Georgi Nikolov")
+        meta(property="og:description" content="An Amsterdam based creative developer.")
+
+        meta(property="og:image" content="/social/georgi-facebook.png")
+        meta(property="og:url" content="http://kenji-special.info")
+        meta(property="og:type" content="website")
+        meta(property="og:site_name" content="Georgi Nikoloff")
+
+        meta(name="twitter:card" content="photo")
+        meta(name="twitter:site" content="@georgiNikoloff")
+        meta(name="twitter:title" content="Georgi Nikoloff Website")
+        meta(name="twitter:image" content="/social/georgi-twitter.png")
+        meta(name="twitter:url" content="http://kenji-special.info")
+
+        //- link(href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet")
+        link(href="bundle.css" rel="stylesheet")
+        style(type="text/css").
+            .animate-in {
+                opacity: 0;
+                transform: translate3d(0, 40px, 0);
+            }
+
+    body
+        .scene-container
+
+        .info-section
+            h1.animate-in.highlight Georgi Nikolov
+            p.animate-in I'm an Amsterdam based creative developer. 
+            p.animate-in 
+                | Currently working at Wonderland Industry.
+            p.animate-in I use JS, WebGL and GLSL for my work. I am learning Blender and Unity. I have experience with nodejs and modern front-end frameworks and tooling.
+            ul.social-list
+                li.animate-in.highlight    
+                    a(href="mailto:nikoloffgeorgi@gmail.com") Email
+                li.animate-in.highlight 
+                    a(href="http://github.com") Github
+                li.animate-in.highlight 
+                    a(href="http://github.com") Codepen
+                li.animate-in.highlight
+                    a(href="http://github.com") Twitter
+            p.animate-in Some of my recent works:
+            ul.projects-list
+                li.animate-in.highlight(data-index="0") 
+                    a(href="http://ho.gl") WebGL Dojo
+                li.animate-in.highlight(data-index="0") 
+                    a(href="http://ho.gl") Codesketch
+                li.animate-in.highlight(data-index="1")
+                    a(href="http://ho.gl") Archive
+        
+            script(src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js")
+            script(src="bundle.js")
+        //- if is_phone
+        //- else
+        //-     script.
+        //-         (function() {
+        //-             var animateIns = document.querySelectorAll('.animate-in');
+        //-             var idx = 0;
+
+        //-             var interval = setInterval(function () {
+        //-                 if (idx >= animateIns.length) {
+        //-                     clearInterval(interval);
+        //-                     return;
+        //-                 }
+        //-                 animateIns[idx].className += ' visible';
+        //-                 idx += 1;
+        //-             }, 50);
+        //-         })();
